@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "number"
+    },
+    "result": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "start": { "type": "string" },
+          "color": { "type": "string" },
+          "textColor": { "type": "string" }
+        },
+        "required": ["title","start","color","textColor"]
+      }
+    }
+  },
+  "required": ["status","result"]
+}
